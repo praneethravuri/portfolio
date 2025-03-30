@@ -2,17 +2,24 @@ import React from 'react'
 import { IconPointFilled } from '@tabler/icons-react'
 import HireMeBtn from './ui/hire-me-btn'
 import CopyEmailBtn from './ui/copy-email-btn'
+import { Badge } from './ui/badge'
 
 const About = () => {
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 p-4">
             <div className="space-y-2">
                 <div className="flex items-center gap-4 justify-between">
                     <div>
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-200">Praneeth Ravuri</h1>
                     </div>
-                    <div className='inline-flex items-center gap-1.5 bg-green-950/50 text-green-400 px-3 py-1 rounded-full text-sm font-medium'>
-                        <IconPointFilled size={14} className="text-green-400" />Available for Work
+                    {/* <div className='inline-flex items-center gap-1.5  px-3 py-1 rounded-full text-sm font-medium'>
+                        <IconPointFilled size={14} className="text-green-600" />Available for Work
+                    </div> */}
+                    <div>
+                        <Badge variant="green"><IconPointFilled size={14} className="text-green-600" />Available for Work</Badge>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
             </div>
